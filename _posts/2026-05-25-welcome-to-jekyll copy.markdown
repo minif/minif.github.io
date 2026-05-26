@@ -1,5 +1,5 @@
 ---
-layout: minif-default
+layout: minif-blog
 published: false
 title:  "Welcome to Jekyll!"
 date:   2026-05-25 19:10:22 -0600
