@@ -1,8 +1,10 @@
 ---
 layout: minif-default
 ---
-<a href="/blog.html">Go back to minif's blog</a>
-<h1>{{ page.title }}</h1>
-<p>{{ page.date | date: "%Y-%m-%d" }}</p> 
-<p>Tags: {{ page.tags }}</p>
-{{ content }}
+<a href="/blog.html">Go back</a>
+<article>
+  <h1>{{ page.title }}</h1>
+  <p>{{ page.date | date: "%Y-%m-%d" }}</p> 
+  <p>Tags: {{ page.tags }}</p>
+  {{ content }}
+</article>
