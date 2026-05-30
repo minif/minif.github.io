@@ -1,0 +1,158 @@
+body {
+	background-image: url("../images/banner.png");
+	background-repeat: repeat-x;
+	background-size: 1000px;
+	
+	image-rendering: crisp-edges;
+	image-rendering: pixelated;
+	background-color: #040031;
+}
+
+.menubar {
+	witdh: 100%;
+}
+
+.title_space {
+	text-align: center;
+}
+
+.menu_bar {
+	text-align: center;
+	background-image: url("../images/tile.png");
+	padding: 10px;
+	border: 5px solid #FFFFFF;
+}
+
+.content_box {
+	background-image: url("../images/tile.png");
+	padding: 10px;
+	border: 5px solid #FFFFFF;
+}
+
+.blue_box {
+	background-color: #000088;
+	border: 5px solid #FFFFFF;
+	padding: 5px;
+}
+
+.center {
+	text-align: center;
+}
+
+.menu_button {
+  	color:  #FFFFFF;
+  	text-align: center;
+  	margin-top: 0px;
+  	font-size: 30px;
+ 	margin: 2%;
+  	text-decoration: none;
+  	width: 19.7%;
+}
+
+.thumb {
+	height: 100px;
+	vertical-align: middle;
+	margin: 1%;
+}
+
+.sub_title {
+	font-size: 50px;
+	color: #FFFFFF
+}
+
+.white_text {
+	color: #FFFFFF;
+}
+
+.date {
+	font-size: 30px;
+	color: #FFFFFF
+}
+
+.text {
+	font-size: 25px;
+	color: #FFFFFF
+}
+
+.page_button {
+	font-size: 15px;
+	background-color: #ffffff;
+}
+
+.button {
+	font-size: 20px;
+	background-color: #CCCCCC;
+}
+
+.wider_button {
+	width: 200px;
+}
+
+.large_image {
+	width: 85%;
+	align: center;
+}
+
+.small_image {
+	height: 100px;
+	align: center;
+}
+
+.square_image {
+	height: 100px;
+	width: 100px;
+	align: center;
+}
+
+.white_button {
+	padding: 10px;
+	background-color:#ffffff;
+	font-size: 30px;
+	text-decoration: none;
+}
+
+p {
+	font-size: 25px;
+	color: #FFFFFF
+}
+
+h1 {
+	font-family: title;
+	font-size: 140px;
+	color: #FFFFFF;
+	margin: 0px;
+}
+
+h2 {
+	font-size: 75px;
+	color: #FFFFFF;
+	margin: 0px;
+}
+
+h3 {
+	font-size: 30px;
+	color: #FFFFFF;
+}
+
+ul {
+	list-style-type:none;
+	margin: 0;
+	padding: 0;
+}
+
+div {
+	min-width: 800px;
+}
+
+li {
+	display: inline;
+}
+
+p, h2, h3, .text, .date, .sub_title, .menu_button {
+	font-family: Tahoma, sans-serif;
+}
+
+@font-face {
+	font-family: title;
+	src: url(../fonts/BitPap.ttf);
+}
