@@ -16,3 +16,4 @@ Photos in this collection have been taken on the following devices/cameras (whic
 - iPhone 8
 - iPhone 13 
 - Canon Rebel XTi
+- Canon PowerShot G10
