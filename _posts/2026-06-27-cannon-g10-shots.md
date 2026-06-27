@@ -1,7 +1,7 @@
 ---
 layout: minif-blog
 published: true
-title:  "Using the Canon PowerShot G10 (and enjoying the nice sunset with it)"
+title:  "Using the Canon PowerShot G10 (and enjoying the sunset with it)"
 categories: Photography
 tags: Photography
 ---
@@ -43,7 +43,7 @@ This picture was really cool to see in person because for a few minutes you coul
 
 ![Trees in the sky at dusk](/images/blogposts/IMG_3833.JPG "IMG_3833.JPG")
 
-To me, this is the photo that I get the "film" feel from. It is the softness of the tree leaves, as well as the specific colours of the sky. I would even argue the way noise looks feels different as opposed to newer cameras.
+To me, this is the photo that I get the "CCD" feel from. It is the softness of the tree leaves, as well as the specific colours of the sky. I would even argue the way noise looks feels different as opposed to newer cameras.
 
 ![Vibrant Sunset sky, with the black silhouette of houses and trees.](/images/blogposts/IMG_3835.JPG "IMG_3835.JPG")
 
