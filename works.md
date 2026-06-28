@@ -45,7 +45,7 @@ I have included a look back at all three iterations of "minif's place" with only
 It is also important to note that these websites were titled "Minif's Place" back when I was indecisive of the capitalisation of my username. I have now decided to officially settle on "minif" (all lower case) and will name all future versions of my sites to follow as such. These sites will retain the capitalized versions of my username for historical purposes.
 
 ### [Minif's Place v1](/works-older-sites/1/)
-This was my initial iteration of my website, generated using the long forgotten software iWork. This was the birthplace of minif's place, and featured a blog, photo gallery, and a page to showcase my Scratch projects. This iteration was never publicly accessible on the internet. Unfortunately I do not have the original iWork project, which is a bit of a shame. This era spanned from 2016-2017.
+This was my initial iteration of my website, generated using the long forgotten software iWeb. This was the birthplace of minif's place, and featured a blog, photo gallery, and a page to showcase my Scratch projects. This iteration was never publicly accessible on the internet. Unfortunately I do not have the original iWeb project, which is a bit of a shame. This era spanned from 2016-2017.
 
 ### [Minif's Place v2](/works-older-sites/2/)
 After learning basic HTML and CSS, I wanted to replace my iWork website with one written entirely by me. Personally, I think this version is the "cleanest" version of my websites despite the simplistic styling, and while the other two versions look better this one has a colour choice I still really like. Initially the menu bar was made of HTML `<buttons>` but they were eventually replaced with the `<a>` tag. This era spanned from 2017-2020.
