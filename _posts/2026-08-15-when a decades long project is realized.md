@@ -66,14 +66,16 @@ center of this rotation
 	
 	//Now do bounds check
 	/*
-	if (xprime>-width/2&&xprime<width/2) { //in line vertical
-		cout << "In line vertical " << xprime << "+-" << width/2
- << endl;
+	if (xprime>-width/2&&xprime<width/2) {
+//in line vertical
+		cout << "In line vertical " << xprime
+<< "+-" << width/2 << endl;
 		yprime = 0;
 		colDistance = height/2;
-	} else if (yprime>-height/2&&yprime<height/2) {//in line horizontal
-		cout << "In line horizontal " << yprime << "+-" << height/2
-<< endl;
+	} else if (yprime>-height/2&&yprime<height/2) {
+//in line horizontal
+		cout << "In line horizontal " << yprime
+<< "+-" << height/2<< endl;
 		xprime = 0; 
 		colDistance = width/2;
 	} else {
@@ -87,10 +89,10 @@ center of this rotation
 	colDistance = 0;
 	
 	//Rotate and translate xcol and ycol back
-	xcol = xprime*cos(rotation*(3.1415926535/180))-yprime*sin(rotation
-*(3.1415926535/180));
-	ycol = xprime*sin(rotation*(3.1415926535/180))+yprime*cos(rotation
-*(3.1415926535/180));
+	xcol = xprime*cos(rotation*(3.1415926535/180))-yprime
+*sin(rotation*(3.1415926535/180));
+	ycol = xprime*sin(rotation*(3.1415926535/180))+yprime
+*cos(rotation*(3.1415926535/180));
 	
 	xcol+=x;
 	ycol+=y;
@@ -121,20 +123,26 @@ The level format I decided to settle with was to use Apple's .plist, really beca
 
 ```
 double convertNumberToDouble (NSNumber* num) {
-	//As of TouchHLE v0.2.2, the way to get a number from an NSNumber was not implemented. Therefore, 
+	//As of TouchHLE v0.2.2, the way to get a number
+from an NSNumber was not implemented. Therefore, 
 	//This convoluted function gets a number for us. 
-	//The downside is that it can only get an integer because scanf cannot get floats or doubles yet.
-	//This will be kept in version 1.0 of this game, but will be deprecated for 1.1 (#define will be switched off and forgotten)
+	//The downside is that it can only get an integer
+ because scanf cannot get floats or doubles yet.
+	//This will be kept in version 1.0 of this game,
+ but will be deprecated for 1.1 (#define will be switched
+ off and forgotten)
 	double val;
 	NSString* n = [num description];
 	char nCString[128];
-	[n getCString:nCString maxLength:128 encoding:NSUTF8StringEncoding];
+	[n getCString:nCString maxLength:128
+encoding:NSUTF8StringEncoding];
 	if ([n isEqualToString:@"0"]) {
 		val = 0; //For some reason a 0 string crashes?
 	} else {
 		int wholePart;
 		sscanf(nCString, "%i", &wholePart);
-		val = wholePart; //We don't really care about the decimals, the scale involves whole numbers
+		val = wholePart; //We don't really care about the
+decimals, the scale involves whole numbers
 	}
 	return val;
 }
