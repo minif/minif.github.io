@@ -2,8 +2,8 @@
 layout: minif-blog
 published: true
 title:  "When a decades long project is realized (The Explora-Ball blogpost)"
-categories: programming
-tags: programming gaming ios
+categories: Programming
+tags: Programming
 ---
 It is 2011, and you are a kid in a bookstore. You are looking in the magazine isle for something to keep you occupied for the car ride. After a bit of looking, one particular magazine catches your eye. 
 
