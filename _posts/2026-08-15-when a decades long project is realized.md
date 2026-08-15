@@ -198,7 +198,7 @@ The audio design is a neat touch I decided to add. Rather than just being a simp
 
 At this point, the game demo was basically nearing completion! After adding a couple of settings buttons on the title screen, and implementing saving, I was ready to share! I sent out the game to a couple of servers for people to try out. I am glad I did this because right away I received reports of issues and crashes on a bunch of different devices. I want to give a big thank you to everyone who did this, as it was extremely helpful for figuring out things I missed. It was also cool to see people play and enjoy the game I spent lots of time working on. 
 
-![The Explora-Ball Demo title screen, with the title, menu buttons, debug settings buttons, and finished background](../images/blogposts/2026-08-14-demo.png "2026-08-14-demo.png")
+![The Explora-Ball Demo title screen, with the title, menu buttons, debug settings buttons, and finished background](/images/blogposts/2026-08-14-demo.png "2026-08-14-demo.png")
 
 As fun as this initial push was, it was nearing a month since I began (July 17th to August 15th, 2024), and I was starting to burn out. I fixed some of the big crashes (which was basically more OpenAL issues, of course) and then took a bit of a break. 
 
