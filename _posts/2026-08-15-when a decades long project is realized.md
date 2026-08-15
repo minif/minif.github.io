@@ -17,7 +17,7 @@ It was a bit expensive, costing about 25 dollars. But after looking around more,
 
 Whole pages are dedicated to explain any technology you could think of. Things like roller coasters, electric guitars, cameras, computer networks DVDs and so many more. You learn what the iPhone is. What USB is. What QR codes do. Oh, and one other thing that you read:
 
-![Page, explaining how an iOS app is made, with general steps and tidbits](../images/blogposts/2026-08-15-makeapp.jpg)
+![Page, explaining how an iOS app is made, with general steps and tidbits](/images/blogposts/2026-08-15-makeapp.jpg)
 
 With how cool the iPhone 4 seems, wouldn't be fun to make your own apps for it? I mean, the steps look pretty easy. You just got to sketch out your ideas for it, then build and code it, and then publish it on the App Store. But alas, "then build and code it" was not that simple. I mean, what do you even do? You don't even know what code is, outside of maybe the couple of projects you made using scratch. Alas, as fun as the idea seems, you accept that you aren't able to do this. You turn the page and then read about 4G networking instead.
 
@@ -51,22 +51,29 @@ The thing I realized was going to be the "make or break" of this project was the
 
 Creating the physics engine was definitely the least fun part, although it was satisfying to get working. I had decided to do it in C++ rather than Objective C because I was more familiar with it. I also used sfml for the graphics library before (or while?) learning OpenGL because it was easy to work with. The idea that I went with was to start with circle-circle collision, and then to "fit the square into the circle hole"
 
-```void Square::setColisionCenter(double& xcol, double& ycol, double& colDistance, double xother, double yother) {
-	//First, translate and rotate other point relative to center of this rotation
+```
+    void Square::setColisionCenter(double& xcol, double& ycol,
+double& colDistance, double xother, double yother) {
+	//First, translate and rotate other point relative to
+center of this rotation
 	xother-=x;
 	yother-=y;
 	
-	double xprime = xother*cos(-rotation*(3.1415926535/180))-yother*sin(-rotation*(3.1415926535/180));
-	double yprime = xother*sin(-rotation*(3.1415926535/180))+yother*cos(-rotation*(3.1415926535/180));
+	double xprime = xother*cos(-rotation*(3.1415926535/180))
+-yother*sin(-rotation*(3.1415926535/180));
+	double yprime = xother*sin(-rotation*(3.1415926535/180))
++yother*cos(-rotation*(3.1415926535/180));
 	
 	//Now do bounds check
 	/*
 	if (xprime>-width/2&&xprime<width/2) { //in line vertical
-		cout << "In line vertical " << xprime << "+-" << width/2 << endl;
+		cout << "In line vertical " << xprime << "+-" << width/2
+ << endl;
 		yprime = 0;
 		colDistance = height/2;
 	} else if (yprime>-height/2&&yprime<height/2) {//in line horizontal
-		cout << "In line horizontal " << yprime << "+-" << height/2 << endl;
+		cout << "In line horizontal " << yprime << "+-" << height/2
+<< endl;
 		xprime = 0; 
 		colDistance = width/2;
 	} else {
@@ -80,8 +87,10 @@ Creating the physics engine was definitely the least fun part, although it was s
 	colDistance = 0;
 	
 	//Rotate and translate xcol and ycol back
-	xcol = xprime*cos(rotation*(3.1415926535/180))-yprime*sin(rotation*(3.1415926535/180));
-	ycol = xprime*sin(rotation*(3.1415926535/180))+yprime*cos(rotation*(3.1415926535/180));
+	xcol = xprime*cos(rotation*(3.1415926535/180))-yprime*sin(rotation
+*(3.1415926535/180));
+	ycol = xprime*sin(rotation*(3.1415926535/180))+yprime*cos(rotation
+*(3.1415926535/180));
 	
 	xcol+=x;
 	ycol+=y;
@@ -110,7 +119,8 @@ The following days, I started to go through the usual game development process. 
 
 The level format I decided to settle with was to use Apple's .plist, really because it was built into Xcode and super easy to use, and felt right at home for an iOS app. The structure was to have a big array of all the level objects, and a dictionary for level properties. Implementing the level loading was also one of the many times where I had to implement "touchHLE hacks" because getting doubles from plists was not implemented yet. Instead, I had to find features that were implemented to do the same thing. This lead to the following code:
 
-```double convertNumberToDouble (NSNumber* num) {
+```
+double convertNumberToDouble (NSNumber* num) {
 	//As of TouchHLE v0.2.2, the way to get a number from an NSNumber was not implemented. Therefore, 
 	//This convoluted function gets a number for us. 
 	//The downside is that it can only get an integer because scanf cannot get floats or doubles yet.
